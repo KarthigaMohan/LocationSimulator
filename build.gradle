@@ -1,0 +1,25 @@
+plugins {
+    id 'java'
+}
+
+group 'org.locus'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.7.0'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.7.0'
+    implementation 'org.springframework:spring-web:5.3.13'
+    implementation 'org.springframework:spring-core:5.3.13'
+    implementation 'io.vavr:vavr:0.10.4'
+    implementation 'io.vavr:vavr-jackson:0.10.3'
+    implementation 'org.springframework:spring-context:5.3.13'
+    implementation 'org.springframework.boot:spring-boot-starter-web:2.5.7'
+}
+
+test {
+    useJUnitPlatform()
+}
